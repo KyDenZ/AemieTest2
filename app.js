@@ -43,7 +43,7 @@ var recognizer = new builder.LuisRecognizer(LuisModelUrl);
 var intents = new builder.IntentDialog({ recognizers: [recognizer] })
 
 .matches('whats_name', (session) => {
-    session.send('Hi! This is the None intent handler. You said: \'%s\'.', session.message.text);
+    session.send('D\'accord, enchanté \'%s\'.', session.message.text);
 })
 
 .onDefault((session) => {
